@@ -1,0 +1,162 @@
+﻿/* Ici c'est la feuille de style pour tout le site web.*/
+
+
+
+
+*{
+	margin:0;			/* on met "margin" et "padding" à 0 sur tous les éléments, pour être certains qu'il n'y ai pas de problème pour cela par la suite */
+	padding:0;
+}
+body{
+    min-width: 980px;  /* On met une taille minimale au "body" afin que celui-ci ne se rétrécice pas trop lors du redimentionnement de la fenêtre et d'eviter que des éléments se mettent n'importe comment */
+}
+/*
+	Ici on met une couleur de fond au contenu, et on le place pour que celui ci ne soit pas sur le menu ou autres.
+*/
+#contenu{
+	min-height:500px;
+	background-color:#F4F4F4;
+	padding:30px;
+	margin-top:40px;
+	margin-left:260px;
+	margin-right:20px;
+	}
+
+/*
+ Dans cette grande partie du CSS, on donne les différentes propriétés voulues a notre menu.
+ Tout d'abbord on le place et ensuite on lui donne son apparence en changeant celle des différents sous menus en changeant leur taille etc...
+ On donne aussi aux blocs créés à partir des liens un effet lors du passage de la souris grâce a un "hover", l'effet reste grace a un "activ" et un "focus"
+*/
+#menu{
+	padding-left:2px;
+	float:left;
+	width:250px;
+	margin:7px auto 0 auto;
+}
+.menu, .sousmenu, .soussousmenu, .soussoussousmenu{
+	text-align:center;
+}
+.menu{
+	height:30px;
+	line-height:30px;
+	height:30px;
+	width:250px;
+	background:#404040;
+	color:#fff;
+}
+.sousmenu{
+	height:30px;
+	line-height:30px;
+	width:250px;
+	background:#808080;
+	color:#fff;
+}
+.soussousmenu{
+	height:30px;
+	line-height:30px;
+	width:250px;
+	background:#D8D8D8;
+	color:#000;
+}
+.soussoussousmenu{
+	height:30px;
+	line-height:30px;
+	width:250px;
+	background:#EFEFEF;
+	color:#000;
+}
+.menu a{
+	display:block;
+	width:100%;
+	height:100%;
+	color:#fff;
+	font-family:arial,sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+	background:#404040;
+}
+.sousmenu a{
+	display:block;
+	width:100%;
+	height:100%;
+	color:#fff;
+	font-family:arial,sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+	background:#808080;
+}
+.soussousmenu a{
+	display:block;
+	width:100%;
+	height:100%;
+	color:#000;
+	font-family:arial,sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+	background:#D8D8D8;
+}
+.soussoussousmenu a{
+	display:block;
+	width:100%;
+	height:100%;
+	color:#000;
+	font-family:arial,sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+	background:#EFEFEF;
+	}
+.menu a:hover, .sousmenu a:hover,.soussousmenu a:hover,.soussoussousmenu a:hover{
+	background:#ECB500;
+	}
+.menu a:active, .sousmenu a:active,.soussousmenu a:active,.soussoussousmenu a:active, .menu a:focus, .sousmenu a:focus, .soussousmenu a:focus,.soussoussousmenu a:focus{
+	background:#E9CA00;
+}
+/*Fin de la partie sur le menu*/
+
+/*Cette partie permet de placer l'image de la page présentation à droite, et de mettre une marge pour que le texte ne soit pas trop collé a celle ci.*/
+#magasin{
+	float:right;
+	margin-left:10px;
+	}
+/*
+	Ici on regroupe tout le script CSS pour le tableau dans la page présentation. On y choisit sa taille, on choisit les bords de chaque cellule, la couleur de fond etc...
+	A noter que sur certains navigateur le tableau rencontre un problème, certaines bordures n'apparaissent pas sans raison.
+*/
+table {
+	margin-top:50px;
+	width:70%;
+	border: 1px solid black;
+	border-collapse:collapse;
+ }
+th{
+	background-color:#DDE9FE;
+	}
+th, td{
+	text-align:center;
+	border: 1px solid black;
+	width:50%;
+}
+
+/* Ici on place l'image pour les pages qui ne sont pas encore faites, quand il faut mettre que le site est en construction.*/
+#imgconstruction{
+	margin-left:100px;
+	}
+	
+/* 
+	Ici on place la photo de la moto dans la page "location" en utilisant le système de boites flottantes, afin que le texte s'affiche a droite de celle ci.
+	On met une marge pour que le texte ne soit pas trop collé.
+*/
+#imgmoto{
+	float:left;
+	margin-right: 20px;
+	}
+/* ici on place les champs pour la reservation a droite sur la page "location"*/
+#reservation{
+	margin-top:20px;
+	float:right;
+	}
+
